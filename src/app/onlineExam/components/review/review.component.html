@@ -1,0 +1,8 @@
+<div class="review">
+    <div *ngFor="let question of questions" class="qa">
+        <div class="q">Q: {{question.questionText}}</div>
+        <div class="a">A: {{answers[question.questionId]}}</div>
+    </div>
+</div>
+
+<a class="btn" (click)="onFinish()" >Finish</a>

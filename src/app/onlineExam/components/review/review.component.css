@@ -1,0 +1,29 @@
+.review{
+    width:70%;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color:rgb(179, 240, 240);
+    text-align: left;
+    padding: 5px;
+    margin-bottom : 10px;
+}
+
+
+.qa:not(:last-child){
+    margin-bottom: 10px;
+    border-bottom: 1px dashed grey;
+}
+
+
+.q{
+    font-weight: bold;
+}
+
+
+.btn{
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    text-decoration:none;
+
+}

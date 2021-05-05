@@ -1,0 +1,17 @@
+<form #qForm="ngForm" (ngSubmit)="onSubmit(qForm)">
+    <div *ngFor="let question of questions" class="question">
+        <div class="text">{{question.questionText}}</div>
+        <div *ngFor="let option of question.options; index as i" class="option">
+            <input ngModel 
+                type="radio" 
+                id="{{question.questionId}}_{{i}}"
+                name="{{question.questionId}}" 
+                value="{{option.optionText}}">
+            <label for="{{question.questionId}}_{{i}}">{{option.optionText}}</label>
+        </div>
+    </div>
+
+    <button class="btn" type="submit">Submit</button>
+</form>
+
+<a routerLink=""><< Back to Home</a>
